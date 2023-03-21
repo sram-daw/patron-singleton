@@ -10,6 +10,7 @@ public class Singleton {
     /**
      * Si el objeto no existe, lo instancia.
      * *
+     *
      * @return la instancia única del objeto. Si no existe la crea primero.
      */
     public static Singleton getInstance() {
@@ -34,5 +35,13 @@ public class Singleton {
 
     public void setEdad(int edad) {
         this.edad = edad;
+    }
+
+    @Override
+    public String toString() {
+        return "Singleton{" +
+                "nombre='" + nombre + '\'' +
+                ", edad=" + edad +
+                '}';
     }
 }
