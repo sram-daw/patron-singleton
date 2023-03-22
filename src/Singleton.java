@@ -6,6 +6,10 @@ public class Singleton {
     //Atributo necesario para que el método getInstance compruebe si existe la instancia única del objeto.
     private static Singleton instance = null;
 
+    //Constructor privado para evitar que se llame desde fuera de la clase
+    private Singleton() {
+
+    }
 
     /**
      * Si el objeto no existe, lo instancia.
